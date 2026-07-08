@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>颜秀坊® 2000家门店裂变系统3.0｜招商官网</title>
+<style>
+:root{
+  --red:#8B0000;
+  --red2:#B31312;
+  --gold:#C89B3C;
+  --gold2:#E8C36A;
+  --cream:#FFF8EC;
+  --dark:#1F1B18;
+  --gray:#666;
+  --line:#E9DEC9;
+  --white:#fff;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;background:var(--cream);color:var(--dark);line-height:1.7}
+a{text-decoration:none;color:inherit}
+.nav{position:sticky;top:0;z-index:20;background:rgba(255,248,236,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:14px 22px}
+.logo{font-size:24px;font-weight:800;color:var(--red);letter-spacing:2px}.logo span{color:var(--gold)}
+.nav-links{display:flex;gap:18px;font-size:14px;color:#5a4632}.nav-links a:hover{color:var(--red)}
+.hero{min-height:720px;background:linear-gradient(135deg,rgba(88,0,0,.94),rgba(139,0,0,.86)),radial-gradient(circle at 70% 10%,rgba(232,195,106,.55),transparent 36%);color:white;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-120px;bottom:-120px;width:500px;height:500px;border:1px solid rgba(232,195,106,.35);border-radius:50%;box-shadow:0 0 0 80px rgba(232,195,106,.06)}
+.container{max-width:1180px;margin:auto;padding:0 24px;position:relative;z-index:2}.hero h1{font-size:64px;line-height:1.12;margin:0 0 22px;font-weight:900}.hero h1 span{color:var(--gold2)}
+.hero p{font-size:22px;max-width:760px;color:#fff3d8;margin:0 0 35px}.badges{display:flex;gap:14px;flex-wrap:wrap;margin:28px 0}.badge{border:1px solid rgba(232,195,106,.55);padding:8px 16px;border-radius:99px;color:#ffe8a6;background:rgba(255,255,255,.06)}
+.btns{display:flex;gap:18px;flex-wrap:wrap}.btn{display:inline-block;padding:15px 30px;border-radius:999px;font-weight:700}.btn-primary{background:var(--gold);color:#321b00}.btn-secondary{border:1px solid rgba(255,255,255,.55);color:white}
+.section{padding:88px 0}.section.white{background:white}.section.dark{background:#211914;color:white}.title{text-align:center;margin-bottom:46px}.title small{color:var(--gold);font-weight:800;letter-spacing:3px}.title h2{font-size:40px;margin:8px 0 12px}.title p{color:var(--gray);font-size:18px;margin:auto;max-width:820px}.dark .title p{color:#e7d8bc}
+.grid{display:grid;gap:24px}.grid-2{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:repeat(3,1fr)}.grid-4{grid-template-columns:repeat(4,1fr)}
+.card{background:white;border:1px solid var(--line);border-radius:20px;padding:30px;box-shadow:0 14px 36px rgba(87,48,13,.08)}.dark .card{background:#30241d;border-color:#51412f;color:white}.card h3{font-size:24px;margin:0 0 12px;color:var(--red)}.dark .card h3{color:var(--gold2)}.card p{color:#5d5144;margin:0}.dark .card p{color:#e4d6c0}.num{font-size:42px;font-weight:900;color:var(--gold);line-height:1}.metric{font-size:15px;color:#7a6b59;margin-top:8px}.flow{display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap}.flow-box{background:linear-gradient(135deg,var(--red),#5f0000);color:white;border-radius:18px;padding:24px 30px;min-width:190px;text-align:center;font-weight:800;box-shadow:0 12px 28px rgba(139,0,0,.22)}.arrow{font-size:34px;color:var(--gold)}
+table{width:100%;border-collapse:collapse;background:white;border-radius:18px;overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,.06)}th{background:var(--red);color:white;padding:16px}td{padding:16px;border-bottom:1px solid #eee;text-align:center}tr:last-child td{border-bottom:0}.highlight{color:var(--red);font-weight:900}.timeline{position:relative;display:grid;gap:18px}.step{display:grid;grid-template-columns:80px 1fr;gap:18px;align-items:start}.step-no{width:56px;height:56px;border-radius:50%;background:var(--red);color:white;display:flex;align-items:center;justify-content:center;font-weight:900}.step-content{background:white;border:1px solid var(--line);border-radius:16px;padding:20px}.step-content h3{margin:0 0 6px;color:var(--red)}.quote{font-size:34px;text-align:center;max-width:900px;margin:auto;font-weight:900;color:var(--red);line-height:1.45}.list{margin:0;padding-left:22px;color:#5d5144}.list li{margin:8px 0}.pill-row{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}.pill{background:#fff;border:1px solid var(--line);padding:12px 20px;border-radius:999px;font-weight:700;color:#6e563c}.cta{background:linear-gradient(135deg,var(--red),#3b0000);color:white;border-radius:30px;padding:58px;text-align:center}.cta h2{font-size:42px;margin:0 0 14px}.cta p{font-size:20px;color:#f5dfb3}.footer{background:#15110f;color:#bcae9d;text-align:center;padding:36px 20px}.warning{background:#fff7df;border-left:6px solid var(--gold);padding:22px;border-radius:14px;color:#5f4520}.small-note{font-size:13px;color:#7f7567;margin-top:18px}
+@media(max-width:900px){.hero h1{font-size:42px}.hero p{font-size:18px}.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}.nav-links{display:none}.section{padding:60px 0}.title h2{font-size:30px}.flow{align-items:stretch}.arrow{display:none}.cta{padding:34px}.cta h2{font-size:30px}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="nav-inner"><div class="logo">颜秀坊<span>®</span></div><div class="nav-links"><a href="#model">商业模式</a><a href="#support">扶持政策</a><a href="#profit">投入产出</a><a href="#growth">裂变系统</a><a href="#risk">风控机制</a><a href="#join">申请加盟</a></div></div></nav>
+
+<header class="hero"><div class="container"><div class="badges"><span class="badge">手工阿胶体验连锁</span><span class="badge">首批100店扶持计划</span><span class="badge">2000家门店裂变系统3.0</span></div><h1>颜秀坊®<br><span>中国手工阿胶专卖店</span><br>招商计划</h1><p>以“现场熬胶、现场切糕、现场体验、会员复购”为核心，打造可复制、可裂变、可持续运营的全国手工阿胶连锁体系。</p><div class="btns"><a class="btn btn-primary" href="#join">申请成为首批门店</a><a class="btn btn-secondary" href="#support">查看5万元扶持政策</a></div></div></header>
+
+<section class="section white"><div class="container"><div class="title"><small>BRAND POSITIONING</small><h2>我们不是简单卖阿胶，而是复制一家成功的店</h2><p>颜秀坊的核心不是传统代理压货，而是建立“总部供应链 + 城��运营中心 + 标准门店 + 终端会员”的连锁模型。</p></div><div class="grid grid-4"><div class="card"><div class="num">1</div><h3>统一品牌</h3><p>统一门头、统一形象、统一品牌识别，形成全国连锁感。</p></div><div class="card"><div class="num">2</div><h3>统一工艺</h3><p>必须按照总部流程现场熬胶，提升信任和体验价值。</p></div><div class="card"><div class="num">3</div><h3>统一价格</h3><p>阿胶块统一零售价400元/盒，避免乱价和低价竞争。</p></div><div class="card"><div class="num">4</div><h3>统一运营</h3><p>通过培训、督导、开业活动、会员系统帮助门店持续销售。</p></div></div></div></section>
+
+<section id="model" class="section"><div class="container"><div class="title"><small>BUSINESS MODEL</small><h2>颜秀坊2000家门店商业模式</h2><p>取消传统多级囤货代理，所有终端以直营加盟店形式纳入总部统一管理。</p></div><div class="flow"><div class="flow-box">东阿御朝贡胶股份有限公司<br>品牌总部</div><div class="arrow">→</div><div class="flow-box">城市运营中心<br>培训督导</div><div class="arrow">→</div><div class="flow-box">颜秀坊门店<br>现场熬胶</div><div class="arrow">→</div><div class="flow-box">终端消费者<br>会员复购</div></div></div></section>
+
+<section class="section white"><div class="container"><div class="title"><small>PRODUCT SYSTEM</small><h2>产品与体验模型</h2><p>一盒250克阿胶块，搭配一袋750克辅料包，现场熬制约1000克阿胶糕，切出约100片。</p></div><div class="grid grid-3"><div class="card"><h3>阿胶块</h3><p>250克铁盒装，厂家成本50元/盒，统一零售价400元/盒。</p></div><div class="card"><h3>辅料包</h3><p>750克/袋，可向厂家购买40元/袋，也可按总部配方本地采购。</p></div><div class="card"><h3>手工阿胶糕</h3><p>门店现场熬制、现场切片、现场体验，增强消费者信任。</p></div></div></div></section>
+
+<section id="support" class="section"><div class="container"><div class="title"><small>SUPPORT PLAN</small><h2>首批100家门店：5万元产品扶持计划</h2><p>总部不直接支付现金，而是按零售价400元/盒计算，以125盒产品分阶段支持，降低门店启动压力。</p></div><table><tr><th>阶段</th><th>触发条件</th><th>释放支持</th><th>按零售价价值</th></tr><tr><td>第1阶段</td><td>门头及装修完成并通过总部验收</td><td>50盒</td><td>20,000元</td></tr><tr><td>第2阶段</td><td>正式开业并完成开业活动</td><td>25盒</td><td>10,000元</td></tr><tr><td>第3阶段</td><td>累计销售100盒</td><td>25盒</td><td>10,000元</td></tr><tr><td>第4阶段</td><td>累计销售300盒</td><td>25盒</td><td>10,000元</td></tr><tr><td><b>合计</b></td><td><b>达到经营目标逐步兑现</b></td><td><b>125盒</b></td><td><b>50,000元</b></td></tr></table><div class="warning" style="margin-top:28px"><b>风控重点：</b>扶持产品必须绑定门店经营进度、销售数据和总部验收，避免一次性给货后不开店、低价甩货或跨区窜货。</div></div></section>
+
+<section id="profit" class="section white"><div class="container"><div class="title"><small>ROI MODEL</small><h2>门店投入产出测算</h2><p>以下为招商展示测算模型，实际利润会受到租金、人工、客流、城市消费水平和运营能力影响。</p></div><div class="grid grid-3"><div class="card"><h3>单盒零售收入</h3><div class="num">400元</div><p>阿胶块统一零售价。</p></div><div class="card"><h3>门店单盒进货</h3><div class="num">200元</div><p>建议终端门店按统一门店供货价核算。</p></div><div class="card"><h3>单盒毛利空间</h3><div class="num">200元</div><p>未扣除租金、人工、辅料、活动等经营费用。</p></div></div><table style="margin-top:30px"><tr><th>月销售量</th><th>销售额</th><th>进货成本</th><th>毛利空间</th></tr><tr><td>100盒/月</td><td>40,000元</td><td>20,000元</td><td>20,000元</td></tr><tr><td>300盒/月</td><td>120,000元</td><td>60,000元</td><td>60,000元</td></tr><tr><td>600盒/月</td><td>240,000元</td><td>120,000元</td><td>120,000元</td></tr></table><p class="small-note">注：辅料包、人工、房租、装修、营销、税费等未计入，应在正式招商合同和财务模型中单独说明。</p></div></section>
+
+<section id="growth" class="section dark"><div class="container"><div class="title"><small>GROWTH SYSTEM</small><h2>店裂变店：2000家门店增长引擎</h2><p>每一家成功门店都可以成为新门店的样板和推荐中心，形成真实经营驱动的裂变。</p></div><div class="grid grid-4"><div class="card"><h3>标准店</h3><p>完成开业，执行总部流程。</p></div><div class="card"><h3>星级店</h3><p>完成月度销售目标，获得活动支持。</p></div><div class="card"><h3>金牌店</h3><p>持续复购稳定，并成功推荐新店。</p></div><div class="card"><h3>城市示范店</h3><p>成为区域培训、招商和运营样板。</p></div></div><div class="quote" style="margin-top:48px;color:#E8C36A">一家店做成样板，一家店复制一家店，最终形成2000家颜秀坊手工阿胶专卖店。</div></div></section>
+
+<section class="section white"><div class="container"><div class="title"><small>STORE REVENUE</small><h2>门店八大盈利来源</h2><p>门店不能只靠卖一盒阿胶，而要通过体验、会员、礼品和团购形成持续现金流。</p></div><div class="grid grid-4"><div class="card"><h3>阿胶块</h3><p>标准主品销售。</p></div><div class="card"><h3>现场熬胶</h3><p>体验式成交。</p></div><div class="card"><h3>现成阿胶糕</h3><p>即买即走。</p></div><div class="card"><h3>节日礼盒</h3><p>春节、中秋、母亲节。</p></div><div class="card"><h3>会员复购</h3><p>30天、90天、180天周期。</p></div><div class="card"><h3>企业团购</h3><p>福利、礼品、客户维护。</p></div><div class="card"><h3>私域社群</h3><p>微信社群、老客转介绍。</p></div><div class="card"><h3>开业活动</h3><p>试吃、体验、预售。</p></div></div></div></section>
+
+<section class="section"><div class="container"><div class="title"><small>ROADMAP</small><h2>2000家门店发展路线</h2><p>先验证样板，再区域复制，最后全国裂变。</p></div><div class="timeline"><div class="step"><div class="step-no">01</div><div class="step-content"><h3>首批100家样板店</h3><p>验证产品、熬胶流程、门店转化、会员复购和扶持机制。</p></div></div><div class="step"><div class="step-no">02</div><div class="step-content"><h3>500家区域连锁</h3><p>建立城市运营中心，形成区域培训、巡店和招商能力。</p></div></div><div class="step"><div class="step-no">03</div><div class="step-content"><h3>1000家全国扩张</h3><p>形成全国品牌声量，建立供应链、数字化、防窜货体系。</p></div></div><div class="step"><div class="step-no">04</div><div class="step-content"><h3>2000家品牌网络</h3><p>打造中国手工阿胶体验连锁代表品牌。</p></div></div></div></div></section>
+
+<section id="risk" class="section white"><div class="container"><div class="title"><small>RISK CONTROL</small><h2>厂家风险控制机制</h2><p>目标是快速开店，但不能变成骗货、囤货、窜货和低价乱价。</p></div><div class="grid grid-3"><div class="card"><h3>分阶段释放</h3><p>不开店、不验收、不销售，就不能拿完整扶持。</p></div><div class="card"><h3>产品二维码追踪</h3><p>每盒产品绑定门店，防止跨区窜货和低价甩货。</p></div><div class="card"><h3>统一价格红线</h3><p>低于总部规定价格销售，可暂停供货和取消扶持。</p></div><div class="card"><h3>门店验收制度</h3><p>统一门头、现场熬胶、流程合格后释放扶持。</p></div><div class="card"><h3>经营数据考核</h3><p>累计销量、会员数、复购率作为晋升依据。</p></div><div class="card"><h3>退出与取消机制</h3><p>长期不开业、停业、违规销售，取消后续权益。</p></div></div></div></section>
+
+<section class="section"><div class="container"><div class="title"><small>JOIN PROCESS</small><h2>加盟开店流程</h2><p>总部提供品牌、产品、流程、培训和开业支持，店主负责门店选址、租金、装修超出部分和日常经营。</p></div><div class="pill-row"><span class="pill">咨询申请</span><span class="pill">总部审核</span><span class="pill">选址评估</span><span class="pill">签约备案</span><span class="pill">统一门头</span><span class="pill">工艺培训</span><span class="pill">装修验收</span><span class="pill">正式开业</span><span class="pill">持续运营</span></div></div></section>
+
+<section id="join" class="section white"><div class="container"><div class="cta"><h2>首批100家颜秀坊门店招募中</h2><p>适合社区店、县城店、养生馆升级、礼品渠道、私域团购团队、女性创业者和本地生活服务商。</p><div class="btns" style="justify-content:center;margin-top:26px"><a class="btn btn-primary" href="tel:400-000-0000">立即咨询加盟</a><a class="btn class="btn-secondary" href="mailto:join@yanxiufang.com">提交合作申请</a></div></div><p class="small-note">联系方式为示例，请替换为企业真实电话、微信、邮箱和招商二维码。本页面为商业模式展示稿，正式招商前建议补充公司资质、商标状态、产品合规文件和加盟合同条款。</p></div></section>
+
+<footer class="footer">© 颜秀坊® 2000家门店裂变系统3.0 ｜ 东阿御朝贡胶股份有限公司 ｜ 招商展示版</footer>
+</body>
+</html>
